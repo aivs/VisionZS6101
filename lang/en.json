@@ -1,0 +1,9 @@
+{
+   "banned_label" : "Devices for which do not need to create widgets",
+   "device_smoke_detector" : "Vision ZS6101 Smoke Detector",
+   "device_tamper" : "Vision ZS6101 Tamper",
+   "m_descr" : "Create widgets Smoke Detector and Tamper",
+   "m_title" : "Vision ZS6101",
+   "tamper_reset_helper" : "in seconds. Usually Vision ZS6101 does not reset the tamper alarm by itself. However it keeps sending alarm reports while it detects tampering. This setting can be used to set a timeout after the last alarm report was received",
+   "tamper_reset_label" : "Tamper alarm reset interval"
+}

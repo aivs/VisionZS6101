@@ -1,0 +1,57 @@
+{
+   "dependencies": [],
+   "singleton": true,
+   "category" : "legacy_products_workaround",
+   "author": "Z-Wave.Me",
+   "homepage": "http://www.z-wave.me",
+   "icon": "icon.png",
+   "moduleName":"VisionZS6101",
+   "version": "1.0",
+   "maturity": "stable",
+   "repository": {
+      "type": "git",
+      "source": "https://github.com/Z-Wave-Me/home-automation"
+   },
+   "defaults" : {
+      "description" : "__m_descr__",
+      "tamperReset" : 60,
+      "title" : "__m_title__"
+   },
+   "options" : {
+      "fields" : {
+         "banned" : {
+            "fields" : {
+               "item" : {
+                  "datasource" : "namespaces",
+                  "field" : "optionLabels",
+                  "optionLabels" : "namespaces:devices_sensorBinary:deviceName",
+                  "type" : "select"
+               }
+            },
+            "label" : "__banned_label__"
+         },
+         "tamperReset" : {
+            "helper" : "__tamper_reset_helper__",
+            "label" : "__tamper_reset_label__"
+         }
+      }
+   },
+   "schema" : {
+      "properties" : {
+         "banned" : {
+            "items" : {
+               "datasource" : "namespaces",
+               "enum" : "namespaces:devices_sensorBinary:deviceId",
+               "field" : "enum",
+               "required" : true
+            },
+            "type" : "array"
+         },
+         "tamperReset" : {
+            "type" : "number"
+         }
+      },
+      "required" : true,
+      "type" : "object"
+   }
+}
